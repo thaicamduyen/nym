@@ -42,5 +42,5 @@ jobs:
           python setup.py bdist_wheel
           python -c 'import os, glob; w=glob.glob("dist/*.whl")[0]; os.rename(w, w.replace("linux", "manylinux1"))'
           ls -l dist
-          twine upload --non-interactive -r pypi -u __token__ dist/*
+          twine upload --non-interactive --skip-existing -r pypi -u __token__ dist/*
 
