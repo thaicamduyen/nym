@@ -22,10 +22,9 @@ import sys
 
 import sphinx_rtd_theme  # noqa: F401
 
-import nym
-
 sys.path.insert(0, os.path.abspath(".."))
 
+import nym  # noqa: E402
 
 # -- General configuration ---------------------------------------------
 
